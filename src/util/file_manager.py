@@ -1,4 +1,4 @@
-from os.path import isfile, join, abspath
+from os.path import isfile, join
 from os import listdir
 
 class FileManager:
@@ -7,7 +7,7 @@ class FileManager:
     pass
 
   def readFiles(self):
-    path = abspath('src/input')
+    path = 'input'
     data = []
 
     for file in listdir(path):
