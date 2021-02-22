@@ -3,10 +3,8 @@ from os import listdir
 
 class FileManager:
 
-  def __init__(self):
-    pass
-
-  def readFiles(self):
+  @staticmethod
+  def readFiles():
     path = 'input'
     data = []
 
@@ -21,5 +19,6 @@ class FileManager:
           
     return data
 
-  def writeFiles(self, data):
-    pass  
+  @staticmethod
+  def writeFiles(data):
+    pass
