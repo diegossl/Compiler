@@ -1,0 +1,6 @@
+const value1 = 5;
+const value2 = 10;
+
+var result = value1 + value2;
+
+print();

@@ -1,0 +1,8 @@
+ART_TK = 'ART'
+REL_TK = 'REL'
+LOG_TK = 'LOG'
+PRE_TK = 'PRE'
+IDE_TK = 'IDE'
+NRO_TK = 'NRO'
+DEL_TK = 'DEL'
+CAD_TK = 'CAD'

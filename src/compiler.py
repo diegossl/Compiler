@@ -1,11 +1,9 @@
-from .util.file_manager import FileManager
+from .lexical_analyzer.index import LexicalAnalyzer
 
 class Compiler:
 
   def __init__(self):
-    pass
+    self.lexicalAnalyzer = LexicalAnalyzer()
   
   def run(self):
-    result = FileManager.readFiles()
-    print(result)
-
+    self.lexicalAnalyzer.startAnalysis()

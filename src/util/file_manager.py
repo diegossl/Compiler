@@ -5,19 +5,19 @@ class FileManager:
 
   @staticmethod
   def readFiles():
-    path = 'input'
-    data = []
+    filePath = 'input'
+    fileData = []
 
-    for file in listdir(path):
-      if isfile(join(path, file)):
-        with open(join(path, file), 'r') as content:
+    for fileName in listdir(filePath):
+      if isfile(join(filePath, fileName)):
+        with open(join(filePath, fileName), 'r') as content:
           text = content.read()
-          data.append({
-            'fileName': file,
+          fileData.append({
+            'fileName': fileName,
             'content': text
           })
           
-    return data
+    return fileData
 
   @staticmethod
   def writeFiles(data):
