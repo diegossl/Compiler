@@ -1,13 +1,16 @@
 from .constants.types import NRO_TK, IDE_TK, PRE_TK, BCM_TK, LCM_TK, NWL_TK, SKP_TK
+from .constants.map import TOKEN_MAP, ERROR_TOKEN_MAP
 from .constants.lexical import RESERVED_WORDS
-from .constants.map import TOKENS_MAP
 from .Token import Token
 import re as regex
 
 class Scanner:
 
+  def searchErrors(self, code):
+    pass
+
   def tokenize(self, code):
-    superRegex = '|'.join('(?P<%s>%s)' % pair for pair in TOKENS_MAP)
+    superRegex = '|'.join('(?P<%s>%s)' % pair for pair in TOKEN_MAP)
     lineNum = 1
     lineStart = 0
 

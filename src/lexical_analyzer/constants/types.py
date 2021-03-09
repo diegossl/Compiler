@@ -14,6 +14,7 @@ CMF_TK = 'CMF'
 NMF_TK = 'NMF'
 CMF_TK = 'COMF'
 OMF_TK = 'OPMF'
+IMF_TK = 'IDEMF'
 
 # Not printed
 BCM_TK = 'BLOCK_COMMENT'
