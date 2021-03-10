@@ -7,8 +7,11 @@ class LexicalAnalyzer:
     self.scanner = Scanner()
   
   def startAnalysis(self):
-    for index, file in enumerate(FileManager.readFiles()):
-      data = []
-      for token in self.scanner.tokenize(file['content']):
-        data.append(token)
-      FileManager.writeFile(index, data)
+    for fileNumber, file in enumerate(FileManager.readFiles()):
+      tokens = []
+      errors = []
+      for error in self.scanner.scanErrors(file['content']):
+        errors.append(error)
+      for token in self.scanner.scanTokens(file['content']):
+        tokens.append(token)
+      FileManager.writeFile(fileNumber, tokens, errors)

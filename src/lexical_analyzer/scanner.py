@@ -6,10 +6,25 @@ import re as regex
 
 class Scanner:
 
-  def searchErrors(self, code):
-    pass
+  def scanErrors(self, code):
+    superErrorRegex = '|'.join('(?P<%s>%s)' % pair for pair in ERROR_TOKEN_MAP)
+    lineNum = 1
+    lineStart = 0
 
-  def tokenize(self, code):
+    for matches in regex.finditer(superErrorRegex, code):
+      groupType = matches.lastgroup
+      value = matches.group()
+
+      if groupType == NWL_TK:
+        lineStart = matches.end()
+        lineNum += 1
+        continue
+      if groupType == SKP_TK:
+        continue
+      
+      yield Token(groupType, value, lineNum)
+
+  def scanTokens(self, code):
     superRegex = '|'.join('(?P<%s>%s)' % pair for pair in TOKEN_MAP)
     lineNum = 1
     lineStart = 0
@@ -17,7 +32,7 @@ class Scanner:
     for matches in regex.finditer(superRegex, code):
       groupType = matches.lastgroup
       value = matches.group()
-      
+
       if groupType == NRO_TK:
         value = float(value) if '.' in value else int(value)
       if groupType == IDE_TK and value in RESERVED_WORDS:
