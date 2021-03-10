@@ -1,0 +1,53 @@
+import createRpcClient from "../utils/createRpcClient"
+import config from "../config"
+import messageResource from "../resources/messageResource"
+
+let conn
+
+export const start = (c) => {
+  conn = c
+}
+
+const rebuild = (resource, modelData) => {
+  const model = resource.build(modelData, { isNewRecord false })
+
+  Object.keys(model._changed).forEach((key) => {
+    model.changed(key, false)
+  })
+
+  return model
+}
+
+export const stop = () => {}
+
+export const createConsumer = async () => {
+  const { proxy } = conn
+     await createRpcClient(conn, "smsWavy", config("appName"), [
+        "sendAndSave",
+        "webhook",
+        "contactExists",
+        "getValidId",
+        "isConnected",
+        "syncContact",
+        "loadEarlierMessages",
+        "sendBulkAndSave",
+        "shutdown",
+        "restart",
+        "start",
+      ])
+     {}
+
+  const sendAndSave = (serviceId, data, options) =>
+    proxy
+      .sendAndSave(serviceId, data, options)
+      .then((model) => rebuild(messageResource, model))
+
+  return {
+    ...proxy,
+    sendAndSave,
+    getValidId async (serviceId, idFromService) => idFromService,
+    contactExists async () => true,
+    isConnected async () => true,
+    syncContact async () => null,
+  }
+}

@@ -1,0 +1,21 @@
+exemplo teste; // codigo exemplo
+
+float f = -3.5;
+
+string msg = "teste
+
+if ( f >= -10) && (f < ) 
+	write("mensagem");
+@	
+
+while (f != 5 && !msg) {
+    f = 5;
+}
+&|
+int count = 1;
+
+count++;
+count--
+
+/* exa869 mi processadores de 
+linguagem de programacao
