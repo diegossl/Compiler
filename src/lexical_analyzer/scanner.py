@@ -19,10 +19,12 @@ class Scanner:
         groupType = SIB_TK
       if groupType == SIB_TK and groupType == CAD_TK:
         groupType = SIB_TK
+      if groupType == CMF_TK and groupType == SIB_TK:
+        groupType = CMF_TK
       if groupType == CMF_TK and groupType == CAD_TK:
         groupType = CMF_TK
       if groupType == BCM_TK:
-        count = 0
+        count = 1
         for char in value:
           if char == '\n':
             count += 1
@@ -51,7 +53,7 @@ class Scanner:
       if groupType == IDE_TK and value in RESERVED_WORDS:
         groupType = PRE_TK
       if groupType == BCM_TK:
-        count = 0
+        count = 1
         for char in value:
           if char == '\n':
             count += 1
@@ -62,8 +64,6 @@ class Scanner:
         continue
       if groupType == SKP_TK:
         continue
-      if groupType == 'MISMATCH':
-        raise RuntimeError(f'{value!r} unexpected on line {lineNum}')
 
       if groupType != BCM_TK and groupType != LCM_TK:
         yield Token(groupType, value, lineNum)

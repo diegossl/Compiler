@@ -7,9 +7,9 @@ class LexicalAnalyzer:
     self.scanner = Scanner()
   
   def startAnalysis(self):
-    print('Doing lexical analysis...\n')
     for fileNumber, file in enumerate(FileManager.readFiles()):
-      print(file['fileName'])
+      fileName = file['fileName']
+      print(f'INPUT: {fileName}')
       tokens = []
       errors = []
       for token in self.scanner.scanTokens(file['content']):
@@ -18,6 +18,6 @@ class LexicalAnalyzer:
         errors.append(error)
       FileManager.writeFile(fileNumber, tokens, errors)
       if len(errors) > 0:
-        print(f'{len(errors)} lexical errors were found\n')
+        print(f'OUTPUT: {len(errors)} lexical errors were found\n')
       else:
-        print(f'Analysis completed successfully! {len(tokens)} leximes were found\n')
+        print(f'OUTPUT: Successfully completed! {len(tokens)} leximes were found\n')

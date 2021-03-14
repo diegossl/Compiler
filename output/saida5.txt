@@ -16,33 +16,33 @@ List of tokens
 3 IDE scanner
 3 DEL )
 3 DEL ;
-8 PRE if
-8 DEL (
-8 IDE scanner
-8 REL >
-8 NRO 5
-8 IDE scanner
-8 REL !=
-8 NRO 7
-8 LOG ||
-8 IDE scanner
-8 REL !=
-8 NRO 9
-8 LOG &&
-8 IDE scanner
-8 ART *
-8 NRO 2
-8 REL ==
-8 NRO 30
-8 DEL )
-9 ART /
+9 PRE if
+9 DEL (
+9 IDE scanner
+9 REL >
+9 NRO 5
+9 IDE scanner
+9 REL !=
+9 NRO 7
+9 LOG ||
+9 IDE scanner
+9 REL !=
+9 NRO 9
+9 LOG &&
+9 IDE scanner
 9 ART *
-9 IDE algo
+9 NRO 2
+9 REL ==
+9 NRO 30
+9 DEL )
+10 ART /
+10 ART *
+10 IDE algo
 
 List of errors
 
 2 CMF "Digita algo,); //Print errado
 
-7 OpMF &
-8 CoMF /* algo 
+8 OpMF &
+9 CoMF /* algo 
 

@@ -601,12 +601,12 @@ List of tokens
 109 DEL )
 109 DEL ;
 110 DEL }
-120 ART /
-120 ART *
-120 IDE Coment
-120 IDE rio
-120 IDE invalido
-120 ART /
+122 ART /
+122 ART *
+122 IDE Coment
+122 IDE rio
+122 IDE invalido
+122 ART /
 
 List of errors
 
@@ -647,5 +647,5 @@ List of errors
 97 SIB :
 100 OpMF &
 104 SIB :
-119 CoMF /* Comentário invalido /
+121 CoMF /* Comentário invalido /
 	
