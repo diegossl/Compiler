@@ -30,3 +30,9 @@ function test () {
     count+++;
   }
 }
+
+"testan do48897
+
+"Testando123"
+
+"Testºando123"

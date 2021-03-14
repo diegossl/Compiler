@@ -5,7 +5,7 @@ RESERVED_WORDS = [
 ]
 STRING = r'"(?:[^"\x00-\x1f\x7f-\xff]|\\.)*([a-z]|[A-Z]|[0-9]|[\x20-\x7f]|\\")"|""'
 ARITHMETIC_OPERATORS = r'(\+\+|\+)|(\-\-|\-)|([\/]|[\*])'
-IDENTIFIERS = r'(_|[a-z]|[A-Z])(\d|[a-z]|[A-Z]|_)*'
+IDENTIFIERS = r'([a-z]|[A-Z])(\d|[a-z]|[A-Z]|_)*'
 BLOCK_COMMENT = r'(\/[*]([^*]|([*][^/]))*[*]+\/)'
 RELATIONAL_OPERATORS = r'(!=|==|<|<=|>|>=|=)'
 DELIMITERS = r'(:|;|,|\(|\)|\[|\]|\{|\}|\.)'
@@ -14,4 +14,3 @@ LOGICAL_OPERATORS = r'(!|&&|\|\|)'
 LINE_COMMENT = r'(\/\/.*)'
 NEWLINE = r'\n'
 SKIP = r'[ \t]+'
-

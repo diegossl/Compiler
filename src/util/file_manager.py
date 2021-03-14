@@ -11,7 +11,7 @@ class FileManager:
       if isfile(join(filePath, fileName)):
         with open(join(filePath, fileName), 'r') as file:
           text = file.read()
-          fileData.append({ 'content': text })
+          fileData.append({ 'content': text, 'fileName': fileName })
     return fileData
 
   @staticmethod

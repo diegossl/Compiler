@@ -27,14 +27,6 @@ List of tokens
 8 IDE msg_1
 8 DEL )
 8 DEL ;
-9 ART /
-9 ART *
-10 IDE comment
-10 NRO 1
-11 IDE comment
-11 NRO 2
-12 ART *
-12 ART /
 14 PRE function
 14 IDE test
 14 DEL (
@@ -47,10 +39,6 @@ List of tokens
 15 PRE true
 15 DEL )
 15 DEL {
-16 ART /
-16 ART /
-16 IDE worked
-16 LOG !
 17 DEL }
 19 PRE var
 19 IDE flag
@@ -63,11 +51,6 @@ List of tokens
 20 IDE flag
 20 DEL )
 20 DEL {
-21 ART /
-21 ART /
-21 IDE It
-21 IDE s
-21 PRE false
 22 DEL }
 24 PRE if
 24 DEL (
@@ -77,11 +60,6 @@ List of tokens
 24 IDE value1
 24 DEL )
 24 DEL {
-25 ART /
-25 ART /
-25 IDE It
-25 IDE s
-25 PRE true
 26 DEL }
 28 PRE var
 28 IDE count
@@ -99,7 +77,13 @@ List of tokens
 30 DEL ;
 31 DEL }
 32 DEL }
+34 IDE testan
+34 IDE do48897
+36 CAD "Testando123"
+38 IDE Test
+38 IDE ando123
 
 List of errors
 
-30 OPMF +++
+34 CAD "testan do48897
+38 CAD "Testºando123"

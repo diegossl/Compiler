@@ -12,9 +12,8 @@ CAD_TK = 'CAD'
 SIB_TK = 'SIB'
 CMF_TK = 'CMF'
 NMF_TK = 'NMF'
-CMF_TK = 'COMF'
-OMF_TK = 'OPMF'
-IMF_TK = 'IDEMF'
+COMF_TK = 'CoMF'
+OPMF_TK = 'OpMF'
 
 # Not printed
 BCM_TK = 'BLOCK_COMMENT'

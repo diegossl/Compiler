@@ -1,4 +1,4 @@
-from .constants.types import NRO_TK, IDE_TK, PRE_TK, BCM_TK, LCM_TK, NWL_TK, SKP_TK
+from .constants.types import NRO_TK, IDE_TK, PRE_TK, BCM_TK, LCM_TK, NWL_TK, SKP_TK, CAD_TK
 from .constants.map import TOKEN_MAP, ERROR_TOKEN_MAP
 from .constants.lexical import RESERVED_WORDS
 from .Token import Token
@@ -6,12 +6,15 @@ import re as regex
 
 class Scanner:
 
+  def __init__(self):
+    self.__filteredCode = []
+
   def scanErrors(self, code):
     superErrorRegex = '|'.join('(?P<%s>%s)' % pair for pair in ERROR_TOKEN_MAP)
     lineNum = 1
     lineStart = 0
 
-    for matches in regex.finditer(superErrorRegex, code):
+    for matches in regex.finditer(superErrorRegex, code, regex.MULTILINE):
       groupType = matches.lastgroup
       value = matches.group()
 
@@ -53,4 +56,6 @@ class Scanner:
         raise RuntimeError(f'{value!r} unexpected on line {lineNum}')
 
       if groupType != BCM_TK and groupType != LCM_TK:
+        if groupType != CAD_TK:
+          self.__filteredCode.append(value)
         yield Token(groupType, value, lineNum)

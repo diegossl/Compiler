@@ -59,7 +59,7 @@ List of tokens
 14 DEL (
 14 IDE model
 14 DEL .
-14 IDE _changed
+14 IDE changed
 14 DEL )
 14 DEL .
 14 IDE forEach

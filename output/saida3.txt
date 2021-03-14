@@ -3,10 +3,6 @@ List of tokens
 1 IDE exemplo
 1 IDE teste
 1 DEL ;
-1 ART /
-1 ART /
-1 IDE codigo
-1 IDE exemplo
 3 IDE float
 3 IDE f
 3 REL =
@@ -71,4 +67,9 @@ List of tokens
 21 IDE programacao
 
 List of errors
+
+14 OpMF &
+14 OpMF |
+20 CoMF /* exa869 mi processadores de 
+linguagem de programacao
 
