@@ -18,6 +18,6 @@ class LexicalAnalyzer:
         errors.append(error)
       FileManager.writeFile(fileNumber, tokens, errors)
       if len(errors) > 0:
-        print(f'Analysis finished! {len(errors)} Lexical errors were found.\n')
+        print(f'{len(errors)} lexical errors were found\n')
       else:
-        print(f'Analysis completed successfully! {len(tokens)} leximes were found.\n')
+        print(f'Analysis completed successfully! {len(tokens)} leximes were found\n')

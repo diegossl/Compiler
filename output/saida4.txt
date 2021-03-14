@@ -343,12 +343,10 @@ List of tokens
 63 NRO 1
 63 DEL ;
 63 IDE primeiro
-63 REL >
-63 REL =
+63 REL >=
 63 NRO 1
 63 IDE primeiro
-63 REL <
-63 REL =
+63 REL <=
 63 NRO 10
 63 DEL ;
 63 IDE primeiro
@@ -612,23 +610,42 @@ List of tokens
 
 List of errors
 
+1 SIB #
+2 SIB #
+3 SIB #
+4 SIB #
 12 OpMF &
+14 SIB %
+16 SIB :
 19 OpMF &
 21 OpMF &
+25 SIB :
 28 OpMF &
 30 OpMF &
+34 SIB :
 37 OpMF &
 39 OpMF &
+43 SIB :
 46 OpMF &
 48 OpMF &
+52 SIB :
 55 OpMF &
+59 SIB :
 62 OpMF &
 63 OpMF |
+68 SIB :
 71 OpMF &
 73 OpMF &
-80 OpMF &
-87 OpMF &
-94 OpMF &
-101 OpMF &
-120 CoMF /* Comentário invalido /
+77 SIB :
+79 CMF "Digite um angulo:);
+
+79 OpMF &
+83 SIB :
+86 OpMF &
+90 SIB :
+93 OpMF &
+97 SIB :
+100 OpMF &
+104 SIB :
+119 CoMF /* Comentário invalido /
 	

@@ -3,9 +3,11 @@ const value2 = 10;
 
 var result = value1 + value2;
 
-const msg_1 = "Bem-vindo a 2021";
+print("testando string invalida);
 
+const msg_1 = "Bem-vindo a 2021";
 print(msg_1);
+
 /*
 comment 1
 comment 2
@@ -27,12 +29,6 @@ function test () {
 
   var count = 0;
   while(true) {
-    count+++;
+    count++;
   }
 }
-
-"testan do48897
-
-"Testando123"
-
-"Testºando123"

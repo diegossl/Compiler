@@ -16,8 +16,7 @@ List of tokens
 7 PRE if
 7 DEL (
 7 IDE f
-7 REL >
-7 REL =
+7 REL >=
 7 ART -
 7 NRO 10
 7 DEL )
@@ -68,8 +67,11 @@ List of tokens
 
 List of errors
 
-14 OpMF &
-14 OpMF |
-20 CoMF /* exa869 mi processadores de 
+5 CMF "teste
+
+8 SIB @
+13 OpMF &
+13 OpMF |
+19 CoMF /* exa869 mi processadores de 
 linguagem de programacao
 

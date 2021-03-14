@@ -41,6 +41,8 @@ List of tokens
 
 List of errors
 
-8 OpMF &
-9 CoMF /* algo 
+2 CMF "Digita algo,); //Print errado
+
+7 OpMF &
+8 CoMF /* algo 
 

@@ -1,13 +1,10 @@
-from .constants.types import NRO_TK, IDE_TK, PRE_TK, BCM_TK, LCM_TK, NWL_TK, SKP_TK, CAD_TK
+from .constants.types import NRO_TK, IDE_TK, PRE_TK, BCM_TK, LCM_TK, NWL_TK, SKP_TK, CAD_TK, SIB_TK, CMF_TK
+from .constants.lexical import RESERVED_WORDS, LINE_COMMENT, BLOCK_COMMENT
 from .constants.map import TOKEN_MAP, ERROR_TOKEN_MAP
-from .constants.lexical import RESERVED_WORDS
 from .Token import Token
 import re as regex
 
 class Scanner:
-
-  def __init__(self):
-    self.__filteredCode = []
 
   def scanErrors(self, code):
     superErrorRegex = '|'.join('(?P<%s>%s)' % pair for pair in ERROR_TOKEN_MAP)
@@ -18,6 +15,18 @@ class Scanner:
       groupType = matches.lastgroup
       value = matches.group()
 
+      if groupType == SIB_TK and (groupType != LINE_COMMENT or groupType != BLOCK_COMMENT):
+        groupType = SIB_TK
+      if groupType == SIB_TK and groupType == CAD_TK:
+        groupType = SIB_TK
+      if groupType == CMF_TK and groupType == CAD_TK:
+        groupType = CMF_TK
+      if groupType == BCM_TK:
+        count = 0
+        for char in value:
+          if char == '\n':
+            count += 1
+        lineNum += count
       if groupType == NWL_TK:
         lineStart = matches.end()
         lineNum += 1
@@ -25,7 +34,8 @@ class Scanner:
       if groupType == SKP_TK:
         continue
       
-      yield Token(groupType, value, lineNum)
+      if groupType != BCM_TK and groupType != LCM_TK and groupType != CAD_TK:
+        yield Token(groupType, value, lineNum)
 
   def scanTokens(self, code):
     superRegex = '|'.join('(?P<%s>%s)' % pair for pair in TOKEN_MAP)
@@ -56,6 +66,4 @@ class Scanner:
         raise RuntimeError(f'{value!r} unexpected on line {lineNum}')
 
       if groupType != BCM_TK and groupType != LCM_TK:
-        if groupType != CAD_TK:
-          self.__filteredCode.append(value)
         yield Token(groupType, value, lineNum)
