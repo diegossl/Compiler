@@ -26,10 +26,14 @@ Table of lexemes:
 
 Table of errors:
 
-| Sigla | Significado        |
-|-------|--------------------|
-| SIB   | INVALID SYMBOL     |
-| NMF   | MALFORMED NUMBER   |
-| CMF   | MALFORMED SEQUENCE |
-| CoMF  | MALFORMED COMMENT  |
-| OpMF  | MALFORMED OPERATOR |
+| Acronym | Meaning            |
+|---------|--------------------|
+| SIB     | INVALID SYMBOL     |
+| NMF     | MALFORMED NUMBER   |
+| CMF     | MALFORMED SEQUENCE |
+| CoMF    | MALFORMED COMMENT  |
+| OpMF    | MALFORMED OPERATOR |
+
+## License
+
+MIT
