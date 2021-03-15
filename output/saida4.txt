@@ -601,12 +601,12 @@ List of tokens
 109 DEL )
 109 DEL ;
 110 DEL }
-122 ART /
-122 ART *
-122 IDE Coment
-122 IDE rio
-122 IDE invalido
-122 ART /
+120 ART /
+120 ART *
+120 IDE Coment
+120 IDE rio
+120 IDE invalido
+120 ART /
 
 List of errors
 
@@ -638,14 +638,13 @@ List of errors
 73 OpMF &
 77 SIB :
 79 CMF "Digite um angulo:);
-
-79 OpMF &
-83 SIB :
-86 OpMF &
-90 SIB :
-93 OpMF &
-97 SIB :
-100 OpMF &
-104 SIB :
-121 CoMF /* Comentário invalido /
+80 OpMF &
+84 SIB :
+87 OpMF &
+91 SIB :
+94 OpMF &
+98 SIB :
+101 OpMF &
+105 SIB :
+120 CoMF /* Comentário invalido /
 	

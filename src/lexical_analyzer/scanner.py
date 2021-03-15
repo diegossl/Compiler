@@ -1,7 +1,7 @@
 from .constants.types import NRO_TK, IDE_TK, PRE_TK, BCM_TK, LCM_TK, NWL_TK, SKP_TK, CAD_TK, SIB_TK, CMF_TK
 from .constants.lexical import RESERVED_WORDS, LINE_COMMENT, BLOCK_COMMENT
 from .constants.map import TOKEN_MAP, ERROR_TOKEN_MAP
-from .Token import Token
+from .token import Token
 import re as regex
 
 class Scanner:
@@ -24,7 +24,7 @@ class Scanner:
       if groupType == CMF_TK and groupType == CAD_TK:
         groupType = CMF_TK
       if groupType == BCM_TK:
-        count = 1
+        count = 0
         for char in value:
           if char == '\n':
             count += 1
@@ -53,7 +53,7 @@ class Scanner:
       if groupType == IDE_TK and value in RESERVED_WORDS:
         groupType = PRE_TK
       if groupType == BCM_TK:
-        count = 1
+        count = 0
         for char in value:
           if char == '\n':
             count += 1
