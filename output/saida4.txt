@@ -94,7 +94,6 @@ List of tokens
 15 DEL {
 16 IDE case
 16 NRO 1
-16 DEL :
 17 IDE printf
 17 DEL (
 17 CAD "SOMA\n"
@@ -141,7 +140,6 @@ List of tokens
 24 DEL ;
 25 IDE case
 25 NRO 2
-25 DEL :
 26 IDE printf
 26 DEL (
 26 CAD "SUBTRACAO\n"
@@ -188,7 +186,6 @@ List of tokens
 33 DEL ;
 34 IDE case
 34 NRO 3
-34 DEL :
 35 IDE printf
 35 DEL (
 35 CAD "DIVISAO\n"
@@ -235,7 +232,6 @@ List of tokens
 42 DEL ;
 43 IDE case
 43 NRO 4
-43 DEL :
 44 IDE printf
 44 DEL (
 44 CAD "MULTIPLICACAO\n"
@@ -282,7 +278,6 @@ List of tokens
 51 DEL ;
 52 IDE case
 52 NRO 5
-52 DEL :
 53 IDE printf
 53 DEL (
 53 CAD "RAIZ QUADRADA\n"
@@ -318,7 +313,6 @@ List of tokens
 58 DEL ;
 59 IDE case
 59 NRO 6
-59 DEL :
 60 IDE printf
 60 DEL (
 60 CAD "FATORIAL\n"
@@ -370,7 +364,6 @@ List of tokens
 67 DEL ;
 68 IDE case
 68 NRO 7
-68 DEL :
 69 IDE printf
 69 DEL (
 69 CAD "PORCENTAGEM\n"
@@ -421,7 +414,6 @@ List of tokens
 76 DEL ;
 77 IDE case
 77 NRO 8
-77 DEL :
 78 IDE printf
 78 DEL (
 78 CAD "SENO\n"
@@ -432,7 +424,6 @@ List of tokens
 79 IDE Digite
 79 IDE um
 79 IDE angulo
-79 DEL :
 79 DEL )
 79 DEL ;
 80 IDE scanf
@@ -462,7 +453,6 @@ List of tokens
 83 DEL ;
 84 IDE case
 84 NRO 9
-84 DEL :
 85 IDE printf
 85 DEL (
 85 CAD "COSSENO\n"
@@ -500,7 +490,6 @@ List of tokens
 90 DEL ;
 91 IDE case
 91 NRO 10
-91 DEL :
 92 IDE printf
 92 DEL (
 92 CAD "TANGENTE\n"
@@ -538,7 +527,6 @@ List of tokens
 97 DEL ;
 98 IDE case
 98 NRO 11
-98 DEL :
 99 IDE printf
 99 DEL (
 99 CAD "LOGARITMO BASE 10\n"
@@ -575,7 +563,6 @@ List of tokens
 104 IDE break
 104 DEL ;
 105 IDE default
-105 DEL :
 106 IDE printf
 106 DEL (
 106 CAD "Opcao invalida\n"
