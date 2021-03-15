@@ -22,7 +22,7 @@ Table of lexemes:
 | ART     | ARITHMETIC OPERATOR |
 | REL     | RELATIONAL OPERATOR |
 | LOG     | LOGIC OPERATOR      |
-| CAD     | CHARACTER SEQUENCE  |
+| CAD     | STRING              |
 
 Table of errors:
 
@@ -30,7 +30,7 @@ Table of errors:
 |---------|--------------------|
 | SIB     | INVALID SYMBOL     |
 | NMF     | MALFORMED NUMBER   |
-| CMF     | MALFORMED SEQUENCE |
+| CMF     | MALFORMED STRING   |
 | CoMF    | MALFORMED COMMENT  |
 | OpMF    | MALFORMED OPERATOR |
 
