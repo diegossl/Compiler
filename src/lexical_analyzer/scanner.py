@@ -6,12 +6,16 @@ import re as regex
 
 class Scanner:
 
-  def scanErrors(self, code):
+  def __init__(self):
+    self.code = None
+
+  def scanErrors(self):
     superErrorRegex = '|'.join('(?P<%s>%s)' % pair for pair in ERROR_TOKEN_MAP)
+    charactersToRemove = []
     lineNum = 1
     lineStart = 0
 
-    for matches in regex.finditer(superErrorRegex, code, regex.MULTILINE):
+    for matches in regex.finditer(superErrorRegex, self.code, regex.MULTILINE):
       groupType = matches.lastgroup
       value = matches.group()
 
@@ -37,14 +41,22 @@ class Scanner:
         continue
       
       if groupType != BCM_TK and groupType != LCM_TK and groupType != CAD_TK:
+        if value not in charactersToRemove:
+          if groupType == CMF_TK:
+            charactersToRemove.insert(0, value)
+          else:
+            charactersToRemove.append(value)
         yield Token(groupType, value, lineNum)
 
-  def scanTokens(self, code):
+    for chars in charactersToRemove:
+      self.code = self.code.replace(chars, '')
+
+  def scanTokens(self):
     superRegex = '|'.join('(?P<%s>%s)' % pair for pair in TOKEN_MAP)
     lineNum = 1
     lineStart = 0
 
-    for matches in regex.finditer(superRegex, code):
+    for matches in regex.finditer(superRegex, self.code):
       groupType = matches.lastgroup
       value = matches.group()
 
