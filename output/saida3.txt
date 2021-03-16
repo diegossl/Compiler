@@ -1,4 +1,4 @@
-List (line, token, lexeme):
+List of tokens (lines, tokens, lexemes):
 
 1		IDE	exemplo
 1		IDE	teste
@@ -53,7 +53,7 @@ List (line, token, lexeme):
 18	IDE	count
 18	ART	--
 
-List (line, tokens, lexical errors):
+List of errors (lines, tokens, lexical errors):
 
 5		CMF		"teste
 9		SIB		@

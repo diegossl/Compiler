@@ -1,4 +1,4 @@
-List (line, token, lexeme):
+List of tokens (lines, tokens, lexemes):
 
 1		IDE	include
 1		REL	<
@@ -584,7 +584,7 @@ List (line, token, lexeme):
 109	DEL	;
 110	DEL	}
 
-List (line, tokens, lexical errors):
+List of errors (lines, tokens, lexical errors):
 
 1		SIB		#
 2		SIB		#

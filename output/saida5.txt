@@ -1,4 +1,4 @@
-List (line, token, lexeme):
+List of tokens (lines, tokens, lexemes):
 
 1		PRE	int
 1		IDE	scanner
@@ -30,7 +30,7 @@ List (line, token, lexeme):
 8		NRO	30
 8		DEL	)
 
-List (line, tokens, lexical errors):
+List of errors (lines, tokens, lexical errors):
 
 2		CMF		"Digita algo,); //Print errado
 8		OpMF	&

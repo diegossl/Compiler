@@ -1,4 +1,4 @@
-List (line, token, lexeme):
+List of tokens (lines, tokens, lexemes):
 
 1		IDE	import
 1		IDE	createRpcClient
@@ -232,6 +232,6 @@ List (line, token, lexeme):
 52	DEL	}
 53	DEL	}
 
-List (line, tokens, lexical errors):
+List of errors (lines, tokens, lexical errors):
 
 14	SIB		_

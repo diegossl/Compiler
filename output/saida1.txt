@@ -1,4 +1,4 @@
-List (line, token, lexeme):
+List of tokens (lines, tokens, lexemes):
 
 1		PRE	const
 1		IDE	value1
@@ -75,5 +75,7 @@ List (line, token, lexeme):
 29	DEL	;
 30	DEL	}
 31	DEL	}
+
+List of errors (lines, tokens, lexical errors):
 
 No lexical errors

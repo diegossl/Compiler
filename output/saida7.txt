@@ -1,4 +1,4 @@
-List (line, token, lexeme):
+List of tokens (lines, tokens, lexemes):
 
 1		IDE	import
 1		DEL	{
@@ -10392,7 +10392,7 @@ List (line, token, lexeme):
 2127	DEL	}
 2129	DEL	}
 
-List (line, tokens, lexical errors):
+List of errors (lines, tokens, lexical errors):
 
 54	SIB		:
 77	SIB		:

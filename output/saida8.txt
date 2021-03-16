@@ -1,4 +1,4 @@
-List (line, token, lexeme):
+List of tokens (lines, tokens, lexemes):
 
 1		PRE	const
 1		DEL	{
@@ -275,5 +275,7 @@ List (line, token, lexeme):
 83	DEL	)
 83	DEL	;
 84	DEL	}
+
+List of errors (lines, tokens, lexical errors):
 
 No lexical errors
