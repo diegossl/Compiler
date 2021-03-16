@@ -9,6 +9,10 @@ class Scanner:
   def __init__(self):
     self.code = None
 
+  # Scans errors in the code read from a file using a regex map composed
+  # of type and value.
+  # At the end, the errors are removed from the code so that in the next
+  # step only tokens and lexemes can be found.
   def scanErrors(self):
     superErrorRegex = '|'.join('(?P<%s>%s)' % pair for pair in ERROR_TOKEN_MAP)
     charactersToRemove = []
@@ -51,6 +55,8 @@ class Scanner:
     for chars in charactersToRemove:
       self.code = self.code.replace(chars, '')
 
+  # Search for tokens and lexemes in the code using a regex map composed of the
+  # type and value pair and ignoring the blanks and tabs.
   def scanTokens(self):
     superRegex = '|'.join('(?P<%s>%s)' % pair for pair in TOKEN_MAP)
     lineNum = 1

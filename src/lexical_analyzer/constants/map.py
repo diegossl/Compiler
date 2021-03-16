@@ -2,7 +2,7 @@ from .lexical import ARITHMETIC_OPERATORS, RELATIONAL_OPERATORS, LOGICAL_OPERATO
 from .types import ART_TK, CAD_TK, DEL_TK, IDE_TK, LOG_TK, NRO_TK, PRE_TK, REL_TK, NWL_TK, SKP_TK, BCM_TK, LCM_TK, IDE_TK, OPMF_TK, COMF_TK, SIB_TK, CMF_TK, NMF_TK
 from .errors import MALFORMED_OPERATOR, INVALID_SYMBOL, MALFORMED_COMMENT, MALFORMED_NUMBER, MALFORMED_STRING
 
-# Token map composed by the (tokenType, value) pair
+# Token map composed by the (type, value) pair
 TOKEN_MAP = [
   (LCM_TK, LINE_COMMENT),
   (BCM_TK, BLOCK_COMMENT),

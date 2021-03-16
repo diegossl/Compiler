@@ -6,6 +6,9 @@ class LexicalAnalyzer:
   def __init__(self):
     self.scanner = Scanner()
   
+  # Reads the code for each file in the input folder and
+  # scan the tokens and errors found. And it returns the
+  # list of tokens for each file.
   def startAnalysis(self):
     tokensByFile = []
 

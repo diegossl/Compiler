@@ -1,8 +1,10 @@
+# Reserved word lexemes
 RESERVED_WORDS = [
   'var', 'const', 'typedef', 'struct', 'extends', 'procedure', 'function', 'start', 'return',
   'if', 'else', 'then', 'while', 'read', 'print', 'int', 'real', 'boolean', 'string', 'true',
   'false', 'global', 'local'
 ]
+# Expressions to find lexemes
 STRING = r'\"(?:[^"\x00-\x1f\x7f-\xff]|\\.)*([a-z]|[A-Z]|[0-9]|[\x20-\x7f]|\\\")\"|\"\"'
 RELATIONAL_OPERATORS = r'(\!\=)|(\<\=)|(\>\=)|(\=\=)|(\<)|(\>)|(\=)'
 ARITHMETIC_OPERATORS = r'(\+\+|\+)|(\-\-|\-)|([\/]|[\*])'
