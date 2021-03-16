@@ -12,7 +12,6 @@ List of tokens
 5 PRE string
 5 IDE msg
 5 REL =
-5 IDE teste
 7 PRE if
 7 DEL (
 7 IDE f
@@ -20,7 +19,6 @@ List of tokens
 7 ART -
 7 NRO 10
 7 DEL )
-7 LOG &&
 7 DEL (
 7 IDE f
 7 REL <
@@ -35,7 +33,6 @@ List of tokens
 11 IDE f
 11 REL !=
 11 NRO 5
-11 LOG &&
 11 LOG !
 11 IDE msg
 11 DEL )
@@ -55,15 +52,6 @@ List of tokens
 17 DEL ;
 18 IDE count
 18 ART --
-20 ART /
-20 ART *
-20 IDE exa869
-20 IDE mi
-20 IDE processadores
-20 IDE de
-21 IDE linguagem
-21 IDE de
-21 IDE programacao
 
 List of errors
 

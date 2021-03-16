@@ -20,9 +20,6 @@ List of tokens
 8 DEL }
 10 IDE s
 10 REL =
-10 ART -
-10 NRO 1
-10 DEL .
 10 DEL .
 10 NRO 3
 10 DEL ;

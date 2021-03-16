@@ -72,12 +72,12 @@ List of tokens
 10 DEL ;
 11 IDE printf
 11 DEL (
-11 CAD "Escolha uma operacao:\n1- SOMA\n2- SUBTRACAO\n3- DIVISAO\n4- MULTIPLICACAO\n5- RAIZ QUADRADA\n6- FATORIAL\n7- PORCENTAGEM\n8- SENO\n9- COSSENO\n10- TANGENTE\n11- LOGARITMO BASE 10\n>"
+11 CAD "Escolha uma operacao\n1- SOMA\n2- SUBTRACAO\n3- DIVISAO\n4- MULTIPLICACAO\n5- RAIZ QUADRADA\n6- FATORIAL\n7- PORCENTAGEM\n8- SENO\n9- COSSENO\n10- TANGENTE\n11- LOGARITMO BASE 10\n>"
 11 DEL )
 11 DEL ;
 12 IDE scanf
 12 DEL (
-12 CAD "%i"
+12 CAD "i"
 12 DEL ,
 12 IDE operadores
 12 DEL )
@@ -101,24 +101,24 @@ List of tokens
 17 DEL ;
 18 IDE printf
 18 DEL (
-18 CAD "Digite um valor: "
+18 CAD "Digite um valor "
 18 DEL )
 18 DEL ;
 19 IDE scanf
 19 DEL (
-19 CAD "%f"
+19 CAD "f"
 19 DEL ,
 19 IDE primeiro
 19 DEL )
 19 DEL ;
 20 IDE printf
 20 DEL (
-20 CAD "Digite outro valor: "
+20 CAD "Digite outro valor "
 20 DEL )
 20 DEL ;
 21 IDE scanf
 21 DEL (
-21 CAD "%f"
+21 CAD "f"
 21 DEL ,
 21 IDE segundo
 21 DEL )
@@ -131,7 +131,7 @@ List of tokens
 22 DEL ;
 23 IDE printf
 23 DEL (
-23 CAD "O valor da soma e: %.2f\n"
+23 CAD "O valor da soma e .2f\n"
 23 DEL ,
 23 IDE soma
 23 DEL )
@@ -147,24 +147,24 @@ List of tokens
 26 DEL ;
 27 IDE printf
 27 DEL (
-27 CAD "Digite um valor: "
+27 CAD "Digite um valor "
 27 DEL )
 27 DEL ;
 28 IDE scanf
 28 DEL (
-28 CAD "%f"
+28 CAD "f"
 28 DEL ,
 28 IDE primeiro
 28 DEL )
 28 DEL ;
 29 IDE printf
 29 DEL (
-29 CAD "Digite outro valor: "
+29 CAD "Digite outro valor "
 29 DEL )
 29 DEL ;
 30 IDE scanf
 30 DEL (
-30 CAD "%f"
+30 CAD "f"
 30 DEL ,
 30 IDE segundo
 30 DEL )
@@ -177,7 +177,7 @@ List of tokens
 31 DEL ;
 32 IDE printf
 32 DEL (
-32 CAD "O valor da subtracao e: %.2f\n"
+32 CAD "O valor da subtracao e .2f\n"
 32 DEL ,
 32 IDE subtracao
 32 DEL )
@@ -193,24 +193,24 @@ List of tokens
 35 DEL ;
 36 IDE printf
 36 DEL (
-36 CAD "Digite um valor: "
+36 CAD "Digite um valor "
 36 DEL )
 36 DEL ;
 37 IDE scanf
 37 DEL (
-37 CAD "%f"
+37 CAD "f"
 37 DEL ,
 37 IDE primeiro
 37 DEL )
 37 DEL ;
 38 IDE printf
 38 DEL (
-38 CAD "Digite outro valor: "
+38 CAD "Digite outro valor "
 38 DEL )
 38 DEL ;
 39 IDE scanf
 39 DEL (
-39 CAD "%f"
+39 CAD "f"
 39 DEL ,
 39 IDE segundo
 39 DEL )
@@ -223,7 +223,7 @@ List of tokens
 40 DEL ;
 41 IDE printf
 41 DEL (
-41 CAD "O valor da divisao e: %.2f\n"
+41 CAD "O valor da divisao e .2f\n"
 41 DEL ,
 41 IDE divisao
 41 DEL )
@@ -239,24 +239,24 @@ List of tokens
 44 DEL ;
 45 IDE printf
 45 DEL (
-45 CAD "Digite um valor: "
+45 CAD "Digite um valor "
 45 DEL )
 45 DEL ;
 46 IDE scanf
 46 DEL (
-46 CAD "%f"
+46 CAD "f"
 46 DEL ,
 46 IDE primeiro
 46 DEL )
 46 DEL ;
 47 IDE printf
 47 DEL (
-47 CAD "Digite outro valor: "
+47 CAD "Digite outro valor "
 47 DEL )
 47 DEL ;
 48 IDE scanf
 48 DEL (
-48 CAD "%f"
+48 CAD "f"
 48 DEL ,
 48 IDE segundo
 48 DEL )
@@ -269,7 +269,7 @@ List of tokens
 49 DEL ;
 50 IDE printf
 50 DEL (
-50 CAD "O valor da divisao e: %.2f\n"
+50 CAD "O valor da divisao e .2f\n"
 50 DEL ,
 50 IDE multiplicacao
 50 DEL )
@@ -285,12 +285,12 @@ List of tokens
 53 DEL ;
 54 IDE printf
 54 DEL (
-54 CAD "Digite o valor: "
+54 CAD "Digite o valor "
 54 DEL )
 54 DEL ;
 55 IDE scanf
 55 DEL (
-55 CAD "%f"
+55 CAD "f"
 55 DEL ,
 55 IDE primeiro
 55 DEL )
@@ -304,7 +304,7 @@ List of tokens
 56 DEL ;
 57 IDE printf
 57 DEL (
-57 CAD "O valor da raiz e: %.2f\n"
+57 CAD "O valor da raiz e .2f\n"
 57 DEL ,
 57 IDE raizq
 57 DEL )
@@ -320,12 +320,12 @@ List of tokens
 60 DEL ;
 61 IDE printf
 61 DEL (
-61 CAD "Digite o valor: "
+61 CAD "Digite o valor "
 61 DEL )
 61 DEL ;
 62 IDE scanf
 62 DEL (
-62 CAD "%f"
+62 CAD "f"
 62 DEL ,
 62 IDE primeiro
 62 DEL )
@@ -355,7 +355,7 @@ List of tokens
 65 DEL }
 66 IDE printf
 66 DEL (
-66 CAD "O fatorial e: %i\n"
+66 CAD "O fatorial e i\n"
 66 DEL ,
 66 IDE fat
 66 DEL )
@@ -371,24 +371,24 @@ List of tokens
 69 DEL ;
 70 IDE printf
 70 DEL (
-70 CAD "Digite o percentual: "
+70 CAD "Digite o percentual "
 70 DEL )
 70 DEL ;
 71 IDE scanf
 71 DEL (
-71 CAD "%f"
+71 CAD "f"
 71 DEL ,
 71 IDE primeiro
 71 DEL )
 71 DEL ;
 72 IDE printf
 72 DEL (
-72 CAD "Digite o valor: "
+72 CAD "Digite o valor "
 72 DEL )
 72 DEL ;
 73 IDE scanf
 73 DEL (
-73 CAD "%f"
+73 CAD "f"
 73 DEL ,
 73 IDE segundo
 73 DEL )
@@ -405,7 +405,7 @@ List of tokens
 74 DEL ;
 75 IDE printf
 75 DEL (
-75 CAD "O pencentual do valor e: %.2i\n"
+75 CAD "O pencentual do valor e .2i\n"
 75 DEL ,
 75 IDE porcentagem
 75 DEL )
@@ -421,14 +421,9 @@ List of tokens
 78 DEL ;
 79 IDE printf
 79 DEL (
-79 IDE Digite
-79 IDE um
-79 IDE angulo
-79 DEL )
-79 DEL ;
 80 IDE scanf
 80 DEL (
-80 CAD "%f"
+80 CAD "f"
 80 DEL ,
 80 IDE primeiro
 80 DEL )
@@ -442,7 +437,7 @@ List of tokens
 81 DEL ;
 82 IDE printf
 82 DEL (
-82 CAD "O seno de %.0f e: %.2f\n"
+82 CAD "O seno de .0f e .2f\n"
 82 DEL ,
 82 IDE primeiro
 82 DEL ,
@@ -460,12 +455,12 @@ List of tokens
 85 DEL ;
 86 IDE printf
 86 DEL (
-86 CAD "Digite um angulo: "
+86 CAD "Digite um angulo "
 86 DEL )
 86 DEL ;
 87 IDE scanf
 87 DEL (
-87 CAD "%f"
+87 CAD "f"
 87 DEL ,
 87 IDE primeiro
 87 DEL )
@@ -479,7 +474,7 @@ List of tokens
 88 DEL ;
 89 IDE printf
 89 DEL (
-89 CAD "O cosseno de %.0f e: %.2f\n"
+89 CAD "O cosseno de .0f e .2f\n"
 89 DEL ,
 89 IDE primeiro
 89 DEL ,
@@ -497,12 +492,12 @@ List of tokens
 92 DEL ;
 93 IDE printf
 93 DEL (
-93 CAD "Digite um angulo: "
+93 CAD "Digite um angulo "
 93 DEL )
 93 DEL ;
 94 IDE scanf
 94 DEL (
-94 CAD "%f"
+94 CAD "f"
 94 DEL ,
 94 IDE primeiro
 94 DEL )
@@ -516,7 +511,7 @@ List of tokens
 95 DEL ;
 96 IDE printf
 96 DEL (
-96 CAD "A tangente de %.0f e: %.2f\n"
+96 CAD "A tangente de .0f e .2f\n"
 96 DEL ,
 96 IDE primeiro
 96 DEL ,
@@ -534,12 +529,12 @@ List of tokens
 99 DEL ;
 100 IDE printf
 100 DEL (
-100 CAD "Digite um angulo: "
+100 CAD "Digite um angulo "
 100 DEL )
 100 DEL ;
 101 IDE scanf
 101 DEL (
-101 CAD "%f"
+101 CAD "f"
 101 DEL ,
 101 IDE primeiro
 101 DEL )
@@ -553,7 +548,7 @@ List of tokens
 102 DEL ;
 103 IDE printf
 103 DEL (
-103 CAD "O log de %.0f e: %.2f\n"
+103 CAD "O log de .0f e .2f\n"
 103 DEL ,
 103 IDE primeiro
 103 DEL ,
@@ -588,12 +583,6 @@ List of tokens
 109 DEL )
 109 DEL ;
 110 DEL }
-120 ART /
-120 ART *
-120 IDE Coment
-120 IDE rio
-120 IDE invalido
-120 ART /
 
 List of errors
 

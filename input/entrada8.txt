@@ -1,0 +1,84 @@
+const {
+  int a 2;
+  boolean b 3;
+}
+
+typedef struct o {
+  int b;
+  int a;
+}
+
+var {
+  int c = 2;
+  int a = 2;
+  int a[a];
+  int b[c][2];
+}
+
+
+function int a (int a, real b[][]) {
+
+  var {
+    int b = c;
+  }
+  
+  local.a(a, d , d);
+  print (aa);
+  read (pp,m);
+
+  while (b == -2) {
+   op = 2;
+  }
+
+  
+  if (d) then {
+    c = c++;
+  } else {
+    print(d);
+  }
+
+  if (c) then {
+    
+  } else {
+    print(d);
+  }
+
+  print(d);
+  read(c);
+
+  return 5 + 2;
+}
+
+procedure o (int p) {
+  var {
+    int b = c;
+  }
+  
+  local.a(a, d , d);
+  print (aa);
+
+  print("a");
+  read(c);
+}
+
+function int opa (int a) {
+  return bem;
+}
+
+procedure ok (int b) {
+  if (d == e) then {
+    o = 0;
+  }
+}
+
+start () {
+  var {
+    int b[3];
+  }
+  
+  local.a(a, 2 , "d");
+  print (aa);
+
+  print("a");
+  read(c);
+}
