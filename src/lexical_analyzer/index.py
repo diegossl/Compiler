@@ -10,7 +10,7 @@ class LexicalAnalyzer:
     tokensByFile = []
 
     for fileNumber, file in enumerate(FileManager.readFiles()):
-      self.scanner.code = file['content']
+      self.scanner.code = file['fileContent']
       fileName = file['fileName']
       print(f'INPUT: {fileName}')
       tokens = []
