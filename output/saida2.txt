@@ -1,33 +1,33 @@
 List of tokens (lines, tokens, lexemes):
 
-1		IDE	import
-1		IDE	createRpcClient
-1		IDE	from
-1		CAD	"../utils/createRpcClient"
-2		IDE	import
-2		IDE	config
-2		IDE	from
-2		CAD	"../config"
-3		IDE	import
-3		IDE	messageResource
-3		IDE	from
-3		CAD	"../resources/messageResource"
-5		IDE	let
-5		IDE	conn
-7		IDE	export
-7		PRE	const
-7		PRE	start
-7		REL	=
-7		DEL	(
-7		IDE	c
-7		DEL	)
-7		REL	=
-7		REL	>
-7		DEL	{
-8		IDE	conn
-8		REL	=
-8		IDE	c
-9		DEL	}
+01	IDE	import
+01	IDE	createRpcClient
+01	IDE	from
+01	CAD	"../utils/createRpcClient"
+02	IDE	import
+02	IDE	config
+02	IDE	from
+02	CAD	"../config"
+03	IDE	import
+03	IDE	messageResource
+03	IDE	from
+03	CAD	"../resources/messageResource"
+05	IDE	let
+05	IDE	conn
+07	IDE	export
+07	PRE	const
+07	PRE	start
+07	REL	=
+07	DEL	(
+07	IDE	c
+07	DEL	)
+07	REL	=
+07	REL	>
+07	DEL	{
+08	IDE	conn
+08	REL	=
+08	IDE	c
+09	DEL	}
 11	PRE	const
 11	IDE	rebuild
 11	REL	=
@@ -234,4 +234,4 @@ List of tokens (lines, tokens, lexemes):
 
 List of errors (lines, tokens, lexical errors):
 
-14	SIB		_
+14	SIB	_

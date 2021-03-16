@@ -17,19 +17,16 @@ class FileManager:
   @staticmethod
   def writeFile(fileNumber, tokens, errors):
     filePath = 'output'
+    tabs = '\t'
     with open(join(filePath, f'saida{fileNumber + 1}.txt'), 'w+') as file:
       file.write('List of tokens (lines, tokens, lexemes):\n\n')
-      firstColumnTabs = None
-      secondColumnTabs = None
       for token in tokens:
-        firstColumnTabs = '\t\t' if token.tokenLine <= 9 else '\t'
-        secondColumnTabs = '\t'
-        file.write(f'{token.tokenLine}{firstColumnTabs}{token.tokenType}{secondColumnTabs}{token.tokenValue}\n')
+        line = f'0{token.tokenLine}' if token.tokenLine <= 9 else token.tokenLine
+        file.write(f'{line}{tabs}{token.tokenType}{tabs}{token.tokenValue}\n')
       file.write('\nList of errors (lines, tokens, lexical errors):\n\n')
       if len(errors) > 0:
         for error in errors:
-          firstColumnTabs = '\t\t' if error.tokenLine <= 9 else '\t'
-          secondColumnTabs = '\t\t' if len(error.tokenType) < 4 else '\t'
-          file.write(f'{error.tokenLine}{firstColumnTabs}{error.tokenType}{secondColumnTabs}{error.tokenValue}\n')
+          line = f'0{error.tokenLine}' if error.tokenLine <= 9 else error.tokenLine
+          file.write(f'{line}{tabs}{error.tokenType}{tabs}{error.tokenValue}\n')
       else:
         file.write('No lexical errors')

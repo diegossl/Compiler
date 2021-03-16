@@ -1,38 +1,38 @@
 List of tokens (lines, tokens, lexemes):
 
-1		PRE	int
-1		IDE	scanner
-2		IDE	Print
-2		DEL	(
-3		IDE	scanf
-3		DEL	(
-3		CAD	"%d"
-3		DEL	,
-3		IDE	scanner
-3		DEL	)
-3		DEL	;
-8		PRE	if
-8		DEL	(
-8		IDE	scanner
-8		REL	>
-8		NRO	5
-8		IDE	scanner
-8		REL	!=
-8		NRO	7
-8		LOG	||
-8		IDE	scanner
-8		REL	!=
-8		NRO	9
-8		IDE	scanner
-8		ART	*
-8		NRO	2
-8		REL	==
-8		NRO	30
-8		DEL	)
+01	PRE	int
+01	IDE	scanner
+02	IDE	Print
+02	DEL	(
+03	IDE	scanf
+03	DEL	(
+03	CAD	"%d"
+03	DEL	,
+03	IDE	scanner
+03	DEL	)
+03	DEL	;
+08	PRE	if
+08	DEL	(
+08	IDE	scanner
+08	REL	>
+08	NRO	5
+08	IDE	scanner
+08	REL	!=
+08	NRO	7
+08	LOG	||
+08	IDE	scanner
+08	REL	!=
+08	NRO	9
+08	IDE	scanner
+08	ART	*
+08	NRO	2
+08	REL	==
+08	NRO	30
+08	DEL	)
 
 List of errors (lines, tokens, lexical errors):
 
-2		CMF		"Digita algo,); //Print errado
-8		OpMF	&
-9		CoMF	/* algo 
+02	CMF	"Digita algo,); //Print errado
+08	OpMF	&
+09	CoMF	/* algo 
 

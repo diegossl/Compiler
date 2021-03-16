@@ -1,23 +1,23 @@
 List of tokens (lines, tokens, lexemes):
 
-1		PRE	start
-1		DEL	(
-1		DEL	)
-2		DEL	{
-3		PRE	var
-4		DEL	{
-5		PRE	int
-5		IDE	a
-5		DEL	;
-6		PRE	int
-6		IDE	x
-6		DEL	;
-7		PRE	real
-7		IDE	s
-7		DEL	,
-7		IDE	b
-7		DEL	;
-8		DEL	}
+01	PRE	start
+01	DEL	(
+01	DEL	)
+02	DEL	{
+03	PRE	var
+04	DEL	{
+05	PRE	int
+05	IDE	a
+05	DEL	;
+06	PRE	int
+06	IDE	x
+06	DEL	;
+07	PRE	real
+07	IDE	s
+07	DEL	,
+07	IDE	b
+07	DEL	;
+08	DEL	}
 10	IDE	s
 10	REL	=
 10	DEL	.
@@ -53,6 +53,6 @@ List of tokens (lines, tokens, lexemes):
 
 List of errors (lines, tokens, lexical errors):
 
-10	NMF		-1.
-12	SIB		@
-13	SIB		$
+10	NMF	-1.
+12	SIB	@
+13	SIB	$
